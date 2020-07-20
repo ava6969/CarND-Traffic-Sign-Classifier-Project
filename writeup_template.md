@@ -19,14 +19,15 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/visualization.jpg "Visualization"
+[image1]: ./examples/visualization.jpeg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./examples/placeholder.png "Traffic Sign 1"
-[image5]: ./examples/placeholder.png "Traffic Sign 2"
-[image6]: ./examples/placeholder.png "Traffic Sign 3"
-[image7]: ./examples/placeholder.png "Traffic Sign 4"
-[image8]: ./examples/placeholder.png "Traffic Sign 5"
+[image4]: ./examples/test.png "Traffic Sign 1"
+[image5]: ./examples/test1.png "Traffic Sign 2"
+[image6]: ./examples/test2.png "Traffic Sign 3"
+[image7]: ./examples/test3.png "Traffic Sign 4"
+[image8]: ./examples/test4.png "Traffic Sign 5"
+[image9]: ./examples/test5.png "Traffic Sign 6"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -53,7 +54,7 @@ signs data set:
 
 #### 2. Include an exploratory visualization of the dataset.
 
-Here is an exploratory visualization of the data set. It is a bar chart showing how the data ...
+Here is an exploratory visualization of the data set. The barchart below explains how the network makes its exploratory decisions. the stop and priority sign look alike so this had a very high entropy
 
 ![alt text][image1]
 
@@ -101,7 +102,7 @@ To train the model, I used an adam optimizer with cross entropy loss, trained fo
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* training set accuracy of 0.091
+* training set accuracy of 0.997
 * validation set accuracy of 0.938 
 * test set accuracy of 0.919
 
@@ -122,10 +123,10 @@ The dropout helped prevent overfitting and conv layer helps in retaining spatial
 Here are five German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
-![alt text][image7] ![alt text][image8]
+![alt text][image7] ![alt text][image8] ![alt text][image9]
 
-The first image might be difficult to classify because ...
-
+The image were really standard and clear images i downloaded online. The network didnt have a hard time classifying these images at all. The major confusion was with the priority road and stop sign because they look alike in black and white.
+ 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
